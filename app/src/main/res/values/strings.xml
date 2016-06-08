@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HPAI Mobile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_intro">Intro</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_gparent_list">GParentList</string>
+    <string name="btn_back">&lt; Back</string>
+    <string name="title_activity_gchild_list">GChildList</string>
+    <string name="title_activity_gdetail_list">GDetailList</string>
+    <string name="title_activity_pdfviewer">PDFViewer</string>
+    <string name="gchild_btn_prev">Prev</string>
+    <string name="gchild_btn_next">Next</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh&#8230;</string>
+    <string name="pull_to_refresh_release_label">Release to refresh&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">Loading&#8230;</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh&#8230;</string>
+    <string name="user_btn_login">Login</string>
+    <string name="user_login_title">Login Member</string>
+    <string name="user_error">Error</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="title_activity_member">MemberActivity</string>
+    <string name="member_logout">Logout</string>
+    <string name="title_activity_bonus_notif">BonusNotif</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_bonus_receiv">BonusReceiv</string>
+    <string name="back_home">&lt; Home</string>
+    <string name="notif_title">Notification</string>
+    <string name="title_activity_thread_room">ThreadRoom</string>
+    <string name="btn_thread">Thread Room</string>
+    <string name="btn_add_thread">Add Thread</string>
+    <string name="thread_add_hint">Write text</string>
+    <string name="thread_add_title">Add Thread</string>
+    <string name="thread_add_btn">Save</string>
+    <string name="title_activity_thread_detail">ThreadDetail</string>
+    <string name="title_activity_custom_fblogin">CustomFBLogin</string>
+	<string name="share_title">Share dengan</string>
+	<string name="share_other">Lain-lain</string>
+	<string name="app_id">530648040380300</string>
+	<string name="share_btn_custom">Share</string>
+	<string name="btn_fb_login">Login FB</string>
+</resources>

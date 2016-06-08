@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<item name="home_btn_profile" type="id"></item>
+	<item name="home_btn_produk" type="id"></item>
+	<item name="home_btn_testimoni" type="id"></item>
+	<item name="home_btn_info" type="id"></item>
+	<item name="home_btn_member" type="id"></item>
+	<item name="home_btn_thread" type="id"></item>
+</resources>

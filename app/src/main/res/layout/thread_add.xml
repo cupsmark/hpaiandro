@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_form_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:padding="@dimen/padding_medium" >
+
+    <TextView
+        android:id="@+id/thread_add_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/thread_add_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/user_error_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/thread_add_title"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/user_txt_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/user_error"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/thread_add_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/user_error_container"
+        android:ems="10"
+        android:hint="@string/thread_add_hint"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:minLines="3"
+        android:maxLines="6"
+        android:scrollbars="vertical" >
+
+        <requestFocus />
+    </EditText>
+
+
+    <Button
+        android:id="@+id/thread_add_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/thread_add_text"
+        android:layout_alignRight="@+id/thread_add_text"
+        android:layout_below="@+id/thread_add_text"
+        android:layout_marginTop="15dp"
+        android:text="@string/thread_add_btn" />
+
+</RelativeLayout>

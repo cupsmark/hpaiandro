@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_form_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:padding="@dimen/padding_medium" >
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/user_login_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/user_error_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textTitle"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/user_txt_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="@dimen/padding_medium"
+            android:text="@string/user_error"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/user_error_container"
+        android:ems="10"
+        android:hint="@string/username_hint"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_alignRight="@+id/user_name"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/password_hint"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/user_btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_password"
+        android:layout_alignRight="@+id/user_password"
+        android:layout_below="@+id/user_password"
+        android:layout_marginTop="15dp"
+        android:text="@string/user_btn_login" />
+
+</RelativeLayout><!-- From: file:/Users/developer/Documents/AndroidProject/HPAIMobile/app/src/main/res/layout/login_layout.xml -->

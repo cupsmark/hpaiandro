@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/gdetail_header_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:paddingBottom="@dimen/padding_medium" >
+
+        <Button
+            android:id="@+id/gshare_btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/share_btn_custom"
+            android:textColor="#000000" />
+
+        <com.facebook.widget.LoginButton
+            android:id="@+id/fbLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/btn_fb_login" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_detail_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gdetail_header_nav"
+        android:layout_marginLeft="@dimen/padding_medium"
+        android:layout_marginRight="@dimen/padding_medium" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_large"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/gdetail_header_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="@dimen/padding_small"
+                 android:layout_marginTop="@dimen/padding_medium"
+                 android:textAppearance="?android:attr/textAppearanceLarge" />
+             
+            <ImageView
+                android:id="@+id/gdetail_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/product_icon" />
+
+            <TextView
+                android:id="@+id/gdetail_textdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </ScrollView>
+    
+</RelativeLayout>
+<!-- From: file:/Users/developer/Documents/AndroidProject/HPAIMobile/app/src/main/res/layout/activity_custom_fblogin.xml -->

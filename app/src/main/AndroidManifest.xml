@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hpai"
+    android:versionCode="14"
+    android:versionName="1.13" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission android:name="com.hpai.permission.C2D_MESSAGE" />
+
+    <uses-permission android:name="com.hpai.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <service
+            android:name="com.hpai.lib.internal.BonusNotificationService"
+            android:enabled="true" />
+
+        <receiver
+            android:name="com.hpai.lib.internal.NotificationReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.hpai.Intro"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hpai.gui.Home"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hpai.gui.GParentList"
+            android:label="@string/title_activity_gparent_list"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hpai.gui.GChildList"
+            android:label="@string/title_activity_gchild_list"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.EDIT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hpai.gui.GDetailList"
+            android:label="@string/title_activity_gdetail_list"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.hpai.gui.PDFViewer"
+            android:label="@string/title_activity_pdfviewer"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.hpai.gui.MemberActivity"
+            android:label="@string/title_activity_member"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name="com.hpai.BonusNotif"
+            android:label="@string/title_activity_bonus_notif"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hpai.BonusReceiv"
+            android:label="@string/title_activity_bonus_receiv"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.hpai.gui.ThreadRoom"
+            android:label="@string/title_activity_thread_room" >
+        </activity>
+        <activity
+            android:name="com.hpai.gui.ThreadDetail"
+            android:label="@string/title_activity_thread_detail" >
+        </activity>
+        <!-- <activity android:name="com.facebook.LoginActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name" />
+        <meta-data android:value="@string/app_id" android:name="com.facebook.sdk.ApplicationId"/>-->
+    </application>
+
+</manifest>

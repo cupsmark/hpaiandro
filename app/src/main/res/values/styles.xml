@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+	<style name="back_button">
+	    <item name="android:layout_gravity">center_horizontal</item>
+	    <item name="android:padding">8dp</item>
+	    <item name="android:background">@drawable/style_gparent_btn_back</item>
+	    <item name="android:textColor">#ffffff</item>
+	    <item name="android:gravity">center</item>
+	</style>
+</resources>
